@@ -1,0 +1,55 @@
+# depslib dependency file v1.0
+1530579137 source:e:\parcialintegrador\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+
+1529860462 e:\parcialintegrador\arraylist.h
+
+1531448195 source:e:\parcialintegrador\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Parser.h"
+	"ArrayList.h"
+	"view.h"
+	"Deposito.h"
+	"utn.h"
+
+1531442070 e:\parcialintegrador\parser.h
+	"ArrayList.h"
+
+1531445845 source:e:\parcialintegrador\parser.c
+	<stdio.h>
+	<stdlib.h>
+	"ArrayList.h"
+	"Deposito.h"
+
+1531442691 e:\parcialintegrador\deposito.h
+
+1529630582 source:e:\parcialintegrador\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"utn.h"
+
+1529630582 e:\parcialintegrador\utn.h
+
+1531443033 source:e:\parcialintegrador\deposito.c
+	"Deposito.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+
+1531445796 source:e:\parcialintegrador\view.c
+	<stdio.h>
+	<stdlib.h>
+	"ArrayList.h"
+	"Deposito.h"
+	"view.h"
+	"utn.h"
+
+1531446705 e:\parcialintegrador\view.h
+
