@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include "ArrayList.h"
 #include "Deposito.h"
+#include "Controller.h"
 
 
 /** \brief  Parser
@@ -30,7 +31,8 @@ int parser_Deposito(char* fileName, ArrayList* pArray)
             if(cantidadLeida==3)
             {
                 aux = Deposito_newConParametrosStr(producto,descripcion,cantidad);
-                if(aux!=NULL){
+                if(aux!=NULL && validIndiceProducto(pArray,aux))
+                {
                     al_add(pArray,aux);
                 //Deposito_getCantidad(aux,&canTest);
                 //Deposito_getDescripcion(aux,desTest);

@@ -4,6 +4,8 @@
 #include "Deposito.h"
 #include "view.h"
 #include "utn.h"
+#include "Controller.h"
+#include "Parser.h"
 void printf_ImprimirProducto(void* p)
 {
     if(p!=NULL)
@@ -31,5 +33,46 @@ void printf_Productos(ArrayList* dep0, ArrayList* dep1)
         else
             printf("OPCION INCORRECTA!\n");
     }
+}
+void printf_MenuPrincipal(ArrayList* dep0, ArrayList* dep1)
+{
+    int opcion=0;
+    char seguir = 's';
+    do
+    {
+        printf("MENU DE OPCIONES: \n");
+        printf("1) CARGAR DEPOSITOS \n");
+        printf("2) LISTAR DEPOSITO \n");
+        printf("3) MIGRAR PRODUCTO \n");
+        printf("4) DESCONTAR STOCK \n");
+        printf("5) AGREGAR STOCK \n");
+        printf("6) SALIR \n");
+        scanf("%d",&opcion);
+        fflush(stdin);
+        switch(opcion)
+        {
+            case 1:
+                parser_Deposito("dep0.csv",dep0);
+                parser_Deposito("dep1.csv",dep1);
+                break;
+            case 2:
+                printf_Productos(dep0,dep1);
+                break;
+            case 3:
+                Deposito_migrar(dep0,dep1);
+                break;
+            case 4:
+                Deposito_DescontarStock(dep0,dep1);
+                break;
+            case 5:
+                Deposito_AgregarStock(dep0,dep1);
+                break;
+            case 6:
+                seguir = 'n';
+                break;
+
+        }
+    }
+    while(seguir!='n');
 }
 

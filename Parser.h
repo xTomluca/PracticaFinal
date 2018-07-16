@@ -5,5 +5,4 @@
 
 int parser_Deposito(char* fileName, ArrayList* pArray);
 
-
 #endif // PARSER_H_INCLUDED

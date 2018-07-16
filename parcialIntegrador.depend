@@ -53,3 +53,69 @@
 
 1531446705 e:\parcialintegrador\view.h
 
+1531688877 source:c:\users\notebook\desktop\practicafinal\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+
+1531688877 c:\users\notebook\desktop\practicafinal\arraylist.h
+
+1531688877 source:c:\users\notebook\desktop\practicafinal\deposito.c
+	"Deposito.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+
+1531688877 c:\users\notebook\desktop\practicafinal\deposito.h
+
+1531688877 c:\users\notebook\desktop\practicafinal\utn.h
+
+1531687449 source:c:\users\notebook\desktop\practicafinal\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Parser.h"
+	"ArrayList.h"
+	"view.h"
+	"Deposito.h"
+	"utn.h"
+
+1531687473 c:\users\notebook\desktop\practicafinal\parser.h
+	"ArrayList.h"
+
+1531679517 c:\users\notebook\desktop\practicafinal\view.h
+
+1531689092 source:c:\users\notebook\desktop\practicafinal\parser.c
+	<stdio.h>
+	<stdlib.h>
+	"ArrayList.h"
+	"Deposito.h"
+	"Controller.h"
+
+1531688877 source:c:\users\notebook\desktop\practicafinal\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"utn.h"
+
+1531692823 source:c:\users\notebook\desktop\practicafinal\view.c
+	<stdio.h>
+	<stdlib.h>
+	"ArrayList.h"
+	"Deposito.h"
+	"view.h"
+	"utn.h"
+	"Controller.h"
+	"Parser.h"
+
+1531692909 source:c:\users\notebook\desktop\practicafinal\controller.c
+	<stdio.h>
+	<stdlib.h>
+	"ArrayList.h"
+	"Deposito.h"
+	"utn.h"
+
+1531692775 c:\users\notebook\desktop\practicafinal\controller.h
+
