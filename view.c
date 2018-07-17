@@ -59,13 +59,23 @@ void printf_MenuPrincipal(ArrayList* dep0, ArrayList* dep1)
                 printf_Productos(dep0,dep1);
                 break;
             case 3:
-                Deposito_migrar(dep0,dep1);
+                if(!Deposito_migrar(dep0,dep1))
+                    printf_OperacionExitosa();
+                else
+                    printf_OperacionErronea();
                 break;
             case 4:
-                Deposito_DescontarStock(dep0,dep1);
+                if(!Deposito_DescontarStock(dep0,dep1))
+                    printf_OperacionExitosa();
+                else
+                    printf_OperacionErronea();
                 break;
             case 5:
-                Deposito_AgregarStock(dep0,dep1);
+
+                if(!Deposito_AgregarStock(dep0,dep1))
+                    printf_OperacionExitosa();
+                else
+                    printf_OperacionErronea();
                 break;
             case 6:
                 seguir = 'n';
@@ -74,5 +84,15 @@ void printf_MenuPrincipal(ArrayList* dep0, ArrayList* dep1)
         }
     }
     while(seguir!='n');
+}
+
+void printf_OperacionExitosa(void)
+{
+    printf("\nSE REALIZO LA OPERACION CON EXITO!\n");
+}
+
+void printf_OperacionErronea(void)
+{
+    printf("\nSE PRODUJO UN ERROR AL REALIZAR LA OPERACION!\n");
 }
 

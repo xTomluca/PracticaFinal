@@ -10,6 +10,42 @@
  * \param   ArrayList* listaEmpleados
  * \return  Return [1]
  */
+int guardar_Deposito(char* fileName, ArrayList* pArray)
+{
+    Deposito* aux;
+    int producto;
+    char descripcion[50];
+    int cantidad;
+    int i;
+    int retorno = -1;
+    /*int canTest = 0;
+    char desTest[50];
+    int proTest = 0;*/
+    FILE* fp;
+    fp = fopen(fileName,"w");
+    if(fp!=NULL)
+    {
+        if(al_len(pArray)>0)
+        {
+            fprintf(fp,"producto,descripcion,cantidad\n");
+            for(i=0;i<al_len(pArray);i++)
+            {
+                aux = al_get(pArray,i);
+                if(aux!=NULL)
+                {
+                    Deposito_getCantidad(aux,&cantidad);
+                    Deposito_getDescripcion(aux,descripcion);
+                    Deposito_getProducto(aux,&producto);
+                    fprintf(fp,"%d,%s,%d\n",producto,descripcion,cantidad);
+                    retorno = 0;
+                }
+            }
+        }
+    }
+    fclose(fp);
+    return retorno;
+}
+
 int parser_Deposito(char* fileName, ArrayList* pArray)
 {
     Deposito* aux;

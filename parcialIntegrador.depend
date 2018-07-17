@@ -119,3 +119,137 @@
 
 1531692775 c:\users\notebook\desktop\practicafinal\controller.h
 
+1531784765 source:e:\practicafinal\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+
+1531784765 e:\practicafinal\arraylist.h
+
+1531785897 source:e:\practicafinal\controller.c
+	<stdio.h>
+	<stdlib.h>
+	"ArrayList.h"
+	"Deposito.h"
+	"Parser.h"
+	"utn.h"
+
+1531784765 e:\practicafinal\deposito.h
+
+1531784765 e:\practicafinal\utn.h
+
+1531784765 source:e:\practicafinal\deposito.c
+	"Deposito.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+
+1531784765 source:e:\practicafinal\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Parser.h"
+	"ArrayList.h"
+	"view.h"
+	"Deposito.h"
+	"utn.h"
+
+1531785629 e:\practicafinal\parser.h
+	"ArrayList.h"
+
+1531784765 e:\practicafinal\view.h
+
+1531784765 source:e:\practicafinal\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"utn.h"
+
+1531784765 source:e:\practicafinal\view.c
+	<stdio.h>
+	<stdlib.h>
+	"ArrayList.h"
+	"Deposito.h"
+	"view.h"
+	"utn.h"
+	"Controller.h"
+	"Parser.h"
+
+1531784765 e:\practicafinal\controller.h
+
+1531785613 source:e:\practicafinal\parser.c
+	<stdio.h>
+	<stdlib.h>
+	"ArrayList.h"
+	"Deposito.h"
+	"Controller.h"
+
+1531784765 source:e:\proyectos facu\practicafinal\arraylist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayList.h"
+
+1531784765 e:\proyectos facu\practicafinal\arraylist.h
+
+1531787616 source:e:\proyectos facu\practicafinal\controller.c
+	<stdio.h>
+	<stdlib.h>
+	"ArrayList.h"
+	"Deposito.h"
+	"Parser.h"
+	"utn.h"
+
+1531784765 e:\proyectos facu\practicafinal\deposito.h
+
+1531785629 e:\proyectos facu\practicafinal\parser.h
+	"ArrayList.h"
+
+1531784765 e:\proyectos facu\practicafinal\utn.h
+
+1531784765 source:e:\proyectos facu\practicafinal\deposito.c
+	"Deposito.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+
+1531784765 source:e:\proyectos facu\practicafinal\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Parser.h"
+	"ArrayList.h"
+	"view.h"
+	"Deposito.h"
+	"utn.h"
+
+1531786098 e:\proyectos facu\practicafinal\view.h
+
+1531786970 source:e:\proyectos facu\practicafinal\parser.c
+	<stdio.h>
+	<stdlib.h>
+	"ArrayList.h"
+	"Deposito.h"
+	"Controller.h"
+
+1531784765 e:\proyectos facu\practicafinal\controller.h
+
+1531784765 source:e:\proyectos facu\practicafinal\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"utn.h"
+
+1531786445 source:e:\proyectos facu\practicafinal\view.c
+	<stdio.h>
+	<stdlib.h>
+	"ArrayList.h"
+	"Deposito.h"
+	"view.h"
+	"utn.h"
+	"Controller.h"
+	"Parser.h"
+

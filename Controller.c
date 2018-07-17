@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include "ArrayList.h"
 #include "Deposito.h"
+#include "Parser.h"
 #include "utn.h"
 
 int validIndiceProducto(ArrayList* pArray, Deposito* pElement)
@@ -53,6 +54,7 @@ int Deposito_migrar(ArrayList* dep0, ArrayList* dep1)
 {
     int indice;
     int producto;
+    int retorno = -1;
     int origen = getInt("Ingrese deposito origen:  < 0 | 1>");
     int destino = getInt("Ingrese deposito destino:  < 0 | 1>");
     Deposito* aux;
@@ -71,6 +73,8 @@ int Deposito_migrar(ArrayList* dep0, ArrayList* dep1)
             {
                 indice = al_indexOf(dep0,aux);
                 al_add(dep1,al_pop(dep0,indice));
+                if(!guardar_Deposito("dep1.csv",dep1) && !guardar_Deposito("dep0.csv",dep0))
+                    retorno = 0;
             }
             else
                 printf("PRODUCTO NO ENCONTRADO, ERROR!\n");
@@ -82,12 +86,14 @@ int Deposito_migrar(ArrayList* dep0, ArrayList* dep1)
             {
                 indice = al_indexOf(dep1,aux);
                 al_add(dep0,al_pop(dep1,indice));
+                if(!guardar_Deposito("dep1.csv",dep1) && !guardar_Deposito("dep0.csv",dep0))
+                    retorno = 0;
             }
             else
                 printf("PRODUCTO NO ENCONTRADO, ERROR!\n");
         }
     }
-    return 0;
+    return retorno;
 }
 
 int Deposito_DescontarStock(ArrayList* dep0, ArrayList* dep1)
@@ -110,13 +116,15 @@ int Deposito_DescontarStock(ArrayList* dep0, ArrayList* dep1)
                 if(cantidadActual==cantidadDescontar)
                 {
                     al_remove(dep1,al_indexOf(dep0,auxDep0));
-                    retorno = 0;
+                    if(!guardar_Deposito("dep1.csv",dep1) && !guardar_Deposito("dep0.csv",dep0))
+                        retorno = 0;
                 }
                 else if(cantidadActual>cantidadDescontar)
                 {
                     cantidadActual=cantidadActual-cantidadDescontar;
                     Deposito_setCantidad(auxDep0,cantidadActual);
-                    retorno = 0;
+                    if(!guardar_Deposito("dep1.csv",dep1) && !guardar_Deposito("dep0.csv",dep0))
+                        retorno = 0;
                 }
                 else
                 {
@@ -131,13 +139,15 @@ int Deposito_DescontarStock(ArrayList* dep0, ArrayList* dep1)
                 if(cantidadActual==cantidadDescontar)
                 {
                     al_remove(dep1,al_indexOf(dep1,auxDep1));
-                    retorno = 0;
+                    if(!guardar_Deposito("dep1.csv",dep1) && !guardar_Deposito("dep0.csv",dep0))
+                        retorno = 0;
                 }
                 else if(cantidadActual>cantidadDescontar)
                 {
                     cantidadActual=cantidadActual-cantidadDescontar;
                     Deposito_setCantidad(auxDep1,cantidadActual);
-                    retorno = 0;
+                    if(!guardar_Deposito("dep1.csv",dep1) && !guardar_Deposito("dep0.csv",dep0))
+                        retorno = 0;
                 }
                 else
                 {
@@ -173,7 +183,8 @@ int Deposito_AgregarStock(ArrayList* dep0, ArrayList* dep1)
                 {
                     cantidadActual=cantidadActual+cantidadAgregar;
                     Deposito_setCantidad(auxDep0,cantidadActual);
-                    retorno = 0;
+                    if(!guardar_Deposito("dep1.csv",dep1) && !guardar_Deposito("dep0.csv",dep0))
+                        retorno = 0;
                 }
                 else
                     printf("ERROR!! CANTIDAD DE STOCK ACTUAL: %d --- CANTIDAD A AGREGAR: %d \n",cantidadActual,cantidadAgregar);
@@ -187,7 +198,8 @@ int Deposito_AgregarStock(ArrayList* dep0, ArrayList* dep1)
                 {
                     cantidadActual=cantidadActual+cantidadAgregar;
                     Deposito_setCantidad(auxDep1,cantidadActual);
-                    retorno = 0;
+                    if(!guardar_Deposito("dep1.csv",dep1) && !guardar_Deposito("dep0.csv",dep0))
+                        retorno = 0;
                 }
                 else
                     printf("CANTIDAD DE STOCK ACTUAL: %d --- CANTIDAD A DESCONTAR: %d \n",cantidadActual,cantidadAgregar);
