@@ -28,6 +28,7 @@ int guardar_Deposito(char* fileName, ArrayList* pArray)
         if(al_len(pArray)>0)
         {
             fprintf(fp,"producto,descripcion,cantidad\n");
+            al_sort(pArray,deposito_SortPorProducto,1);
             for(i=0;i<al_len(pArray);i++)
             {
                 aux = al_get(pArray,i);

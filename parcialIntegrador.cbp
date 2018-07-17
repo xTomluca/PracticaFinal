@@ -47,8 +47,6 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="Parser.h" />
-		<Unit filename="dep0.csv" />
-		<Unit filename="dep1.csv" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>

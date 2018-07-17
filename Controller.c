@@ -211,3 +211,20 @@ int Deposito_AgregarStock(ArrayList* dep0, ArrayList* dep1)
     }
     return retorno;
 }
+
+int deposito_SortPorProducto(void* pElement1, void* pElement2)
+{
+    int prod1,prod2,retorno;
+    if(pElement1!=NULL&&pElement2!=NULL)
+    {
+        Deposito_getProducto(pElement1,&prod1);
+        Deposito_getProducto(pElement2,&prod2);
+        if(prod1>prod2)
+            retorno = 1;
+        else if(prod1==prod2)
+            retorno = 0;
+        else if(prod1<prod2)
+            retorno = -1;
+    }
+    return retorno;
+}

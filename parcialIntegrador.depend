@@ -194,7 +194,7 @@
 
 1531784765 e:\proyectos facu\practicafinal\arraylist.h
 
-1531787616 source:e:\proyectos facu\practicafinal\controller.c
+1531788283 source:e:\proyectos facu\practicafinal\controller.c
 	<stdio.h>
 	<stdlib.h>
 	"ArrayList.h"
@@ -227,14 +227,14 @@
 
 1531786098 e:\proyectos facu\practicafinal\view.h
 
-1531786970 source:e:\proyectos facu\practicafinal\parser.c
+1531788531 source:e:\proyectos facu\practicafinal\parser.c
 	<stdio.h>
 	<stdlib.h>
 	"ArrayList.h"
 	"Deposito.h"
 	"Controller.h"
 
-1531784765 e:\proyectos facu\practicafinal\controller.h
+1531788503 e:\proyectos facu\practicafinal\controller.h
 
 1531784765 source:e:\proyectos facu\practicafinal\utn.c
 	<stdio.h>
